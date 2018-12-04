@@ -10,10 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_03_152542) do
+ActiveRecord::Schema.define(version: 2018_12_04_175231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "colocs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "plannings", force: :cascade do |t|
+    t.integer "week_nb"
+    t.boolean "completed"
+    t.bigint "user_id"
+    t.bigint "task_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["task_id"], name: "index_plannings_on_task_id"
+    t.index ["user_id"], name: "index_plannings_on_user_id"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.string "icon"
+    t.text "description"
+    t.integer "weight"
+    t.integer "points"
+    t.bigint "coloc_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["coloc_id"], name: "index_tasks_on_coloc_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +52,16 @@ ActiveRecord::Schema.define(version: 2018_12_03_152542) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pseudo"
+    t.string "photo"
+    t.bigint "coloc_id"
+    t.index ["coloc_id"], name: "index_users_on_coloc_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "plannings", "tasks"
+  add_foreign_key "plannings", "users"
+  add_foreign_key "tasks", "colocs"
+  add_foreign_key "users", "colocs"
 end
