@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users
+  get 'colocs/new', to:'colocs#new'
+  post 'colocs', to:'colocs#create'
+  get 'tasks/select', to:'tasks#select_tasks'
+  post 'tasks/select', to:'tasks#save_selection'
+  get 'plannings', to:'plannings#index'
+  post 'plannings/generate', to:'plannings#generate'
+  patch 'plannings/:id', to:'plannings#update'
 end
