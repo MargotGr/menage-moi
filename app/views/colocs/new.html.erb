@@ -1,2 +1,32 @@
-<h1>Colocs#new</h1>
-<p>Find me in app/views/colocs/new.html.erb</p>
+<div class="row">
+</br>
+    <div class="col-md-8 col-md-offset-2">
+      <%= simple_form_for @coloc do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+  </br>
+      <p>Combien as-tu de colocs?</p>
+
+<input id="nb_coloc" name="age" type="radio" value=1 />
+<label for="nb_coloc">1</label>
+<input id="nb_coloc" name="age" type="radio" value=2 />
+<label for="nb_coloc">2</label>
+<input id="nb_coloc" name="age" type="radio" value=3 />
+<label for="nb_coloc">3</label>
+<input id="nb_coloc" name="age" type="radio" value=4 />
+<label for="nb_coloc">4</label>
+<input id="nb_coloc" name="age" type="radio" value=5 />
+<label for="nb_coloc">5</label>
+
+		</br>
+      <p>Envoie un mail à tes colocs pour les inviter </p>
+	<%= email_field(:user, :address) %>
+	<%= email_field(:user, :address) %>
+	<%= email_field(:user, :address) %>
+	<input class= 'btn btn-primary'
+       type="button"
+       value="C'est parti!">
+
+    </div>
+  </div>
