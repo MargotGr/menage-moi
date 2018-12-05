@@ -5,10 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Coloc.destroy_all
-User.destroy_all
-Task.destroy_all
 Planning.destroy_all
+Task.destroy_all
+User.destroy_all
+Coloc.destroy_all
 
 puts "creating seeds"
 colove = Coloc.new(name:"colove")
