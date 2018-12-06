@@ -1,12 +1,14 @@
 class PlanningsController < ApplicationController
-  def index
-    @plannings = Planning.where(user:current_user)
-  end
+  # skip_before_action :authenticate_user!
 
-  def generate
-    redirect_to plannings_path
+  def index
+    @week_nb = Time.now.strftime("%U").to_i
+    @plannings = Planning.where(user: current_user, week_nb: @week_nb).order(:id)
   end
 
   def update
+    @planning = Planning.find(params[:id])
+    @planning.update(completed: true)
+    redirect_to plannings_path
   end
 end
