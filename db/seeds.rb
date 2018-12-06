@@ -34,12 +34,12 @@ plantes.save!
 cuisine.save!
 wc.save!
 
-planning1 = Planning.new(week_nb:49, completed: false, user: marion, task: vaisselle)
-planning2 = Planning.new(week_nb:49, completed: false, user: marion, task: plantes)
-planning3 = Planning.new(week_nb:49, completed: false, user: margot, task: aspirateur)
-planning4 = Planning.new(week_nb:49, completed: false, user: margot, task: cuisine)
-planning5 = Planning.new(week_nb:49, completed: false, user: piero, task: wc)
-planning6 = Planning.new(week_nb:49, completed: false, user: piero, task: litière)
+planning1 = Planning.new(week_nb:1, completed: false, user: marion, task: vaisselle)
+planning2 = Planning.new(week_nb:1, completed: false, user: marion, task: plantes)
+planning3 = Planning.new(week_nb:1, completed: false, user: margot, task: aspirateur)
+planning4 = Planning.new(week_nb:1, completed: false, user: margot, task: cuisine)
+planning5 = Planning.new(week_nb:1, completed: false, user: piero, task: wc)
+planning6 = Planning.new(week_nb:1, completed: false, user: piero, task: litière)
 planning1.save!
 planning2.save!
 planning3.save!
