@@ -1,6 +1,11 @@
 <h1>It's a match !!</h1>
 <p>Voici ton planning pour la semaine:</p>
 <% @plannings.each do |planning| %>
-<div class="card_task"><%= link_to planning.task.name %></div>
+<div class="card_task">
+<%= image_tag  planning.task.icon%>
+<div><%= link_to planning.task.name %></div>
+</div>
+<img src="" alt="">
+<div></div>
 
 <% end %>
