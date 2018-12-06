@@ -21,12 +21,12 @@ marion.save!
 piero.save!
 margot.save!
 
-aspirateur = Task.new(name:"aspirateur", coloc: colove)
-vaisselle = Task.new(name:"vaisselle", coloc: colove)
-litière = Task.new(name:"litière", coloc: colove)
-plantes = Task.new(name:"plantes", coloc: colove)
-cuisine = Task.new(name:"cuisine", coloc: colove)
-wc = Task.new(name:"wc", coloc: colove)
+aspirateur = Task.new(name:"aspirateur", coloc: colove, icon:"aspirateur.png")
+vaisselle = Task.new(name:"vaisselle", coloc: colove, icon:"vaisselle.png")
+litière = Task.new(name:"litière", coloc: colove, icon:"litiere.png")
+plantes = Task.new(name:"plantes", coloc: colove, icon:"plante.png")
+cuisine = Task.new(name:"cuisine", coloc: colove, icon:"cuisine.png")
+wc = Task.new(name:"wc", coloc: colove, icon:"toilettes.png")
 aspirateur.save!
 vaisselle.save!
 litière.save!
