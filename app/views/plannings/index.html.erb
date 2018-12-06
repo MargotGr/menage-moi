@@ -6,6 +6,7 @@
 
   <% @plannings.each do |planning| %>
     <div class="card_task">
+      <%= image_tag  planning.task.icon%>
       <p><%= link_to planning.task.name, planning_path(planning), method: :patch %></p>
       <p>Fait : <%= planning.completed %></p>
     </div>
