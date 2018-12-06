@@ -8,16 +8,12 @@
   </br>
       <p>Combien as-tu de colocs?</p>
 
-<input id="nb_coloc" name="age" type="radio" value=1 />
-<label for="nb_coloc">1</label>
-<input id="nb_coloc" name="age" type="radio" value=2 />
-<label for="nb_coloc">2</label>
-<input id="nb_coloc" name="age" type="radio" value=3 />
-<label for="nb_coloc">3</label>
-<input id="nb_coloc" name="age" type="radio" value=4 />
-<label for="nb_coloc">4</label>
-<input id="nb_coloc" name="age" type="radio" value=5 />
-<label for="nb_coloc">5</label>
+
+<form>
+<input type="button" value=" - " onClick="javascript:this.form.champ.value--;">
+<input type="text" name="champ" value="0">
+<input type="button" value=" + " onClick="javascript:this.form.champ.value++;">
+</form>
 
 		</br>
       <p>Envoie un mail à tes colocs pour les inviter </p>
@@ -28,122 +24,6 @@
        type="button"
        value="C'est parti!">
 
-    <style>
-      html {
-        box-sizing: border-box;
-        background: url('https://source.unsplash.com/NFs6dRTBgaM/2000x2000') fixed;
-        background-size: cover;
-      }
 
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
-
-      body {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: sans-serif;
-        font-size: 20px;
-        margin: 0;
-      }
-
-      .items {
-        height: 800px;
-        padding: 100px;
-        width: 100%;
-        border: 1px solid white;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        user-select: none;
-        cursor: pointer;
-        transition: all 0.2s;
-        transform: scale(0.98);
-        will-change: transform;
-        position: relative;
-        background: rgba(255,255,255,0.1);
-        font-size: 0;
-        perspective: 500px;
-      }
-
-      .items.active {
-        background: rgba(255,255,255,0.3);
-        cursor: grabbing;
-        cursor: -webkit-grabbing;
-        transform: scale(1);
-      }
-
-      .item {
-        width: 200px;
-        height: calc(100% - 40px);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 80px;
-        font-weight: 100;
-        color: rgba(0,0,0,0.15);
-        box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
-      }
-
-      .item:nth-child(9n+1) { background: dodgerblue;}
-      .item:nth-child(9n+2) { background: goldenrod;}
-      .item:nth-child(9n+3) { background: paleturquoise;}
-      .item:nth-child(9n+4) { background: gold;}
-      .item:nth-child(9n+5) { background: cadetblue;}
-      .item:nth-child(9n+6) { background: tomato;}
-      .item:nth-child(9n+7) { background: lightcoral;}
-      .item:nth-child(9n+8) { background: darkslateblue;}
-      .item:nth-child(9n+9) { background: rebeccapurple;}
-
-      .item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
-      .item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
-    </style>
-
-    <div class="items">
-        <div class="item item1">01</div>
-        <div class="item item2">02</div>
-        <div class="item item3">03</div>
-        <div class="item item4">04</div>
-        <div class="item item5">05</div>
-        <div class="item item6">06</div>
-        <div class="item item7">07</div>
-        <div class="item item8">08</div>
-        <div class="item item9">09</div>
-        <div class="item item10">10</div>
-        <div class="item item11">11</div>
-        <div class="item item12">12</div>
-        <div class="item item13">13</div>
-        <div class="item item14">14</div>
-    </div>
-
-    <script>
-  const slider = document.querySelector('.items');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;  // stop the fn from running
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-</script>
   </div>
 </div>
