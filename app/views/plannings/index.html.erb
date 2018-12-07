@@ -4,12 +4,18 @@
 
   <p>Voici ton planning pour la semaine :</p>
 
-  <% @plannings.each do |planning| %>
-    <div class="card_task">
-      <%= image_tag  planning.task.icon%>
-      <p><%= link_to planning.task.name, planning_path(planning), method: :patch %></p>
-      <p>Fait : <%= planning.completed %></p>
-    </div>
-  <% end %>
+    <div class="plannings">
+      <% @plannings.each do |planning| %>
 
+        <% if planning.completed == true
+            icon_class = "card_icon_done"
+          else
+            icon_class = "card_icon_to_do"
+          end
+        %>
+
+        <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
+
+      <% end %>
+    </div>
 </div>
