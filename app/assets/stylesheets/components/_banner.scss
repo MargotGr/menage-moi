@@ -1,8 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 50px);
   background-size: cover !important;
   display: flex;
   justify-content: center;
@@ -30,7 +29,7 @@
   margin: 10px;
   // margin-top: 100px;
   // background-color: red;
-  border-radius: 20px;
+  border-radius: 2%;
   justify-content: center;
   padding: 15px;
   font-size: 22px;

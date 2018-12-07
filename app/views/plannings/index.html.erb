@@ -1,21 +1,30 @@
 <div class="container">
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
 
-  <h1>It's a match !!!</h1>
+      <h1>It's a match !!!</h1>
 
-  <p>Voici ton planning pour la semaine :</p>
+      <p>Voici ton planning pour la semaine :</p>
 
-    <div class="plannings">
-      <% @plannings.each do |planning| %>
+      <p><%= image_tag current_user.photo, class: "img-circle", height: 150 %></p>
 
-        <% if planning.completed == true
-            icon_class = "card_icon_done"
-          else
-            icon_class = "card_icon_to_do"
-          end
-        %>
+      <div class="plannings">
+        <% @plannings.each do |planning| %>
 
-        <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
+          <% if planning.completed == true
+              icon_class = "card_icon_done"
+            else
+              icon_class = "card_icon_to_do"
+            end
+          %>
 
-      <% end %>
+          <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
+
+        <% end %>
+      </div>
+
+      <p><input type="submit" class="btn btn-rose" value="Planning de ma coloc" /></p>
+      <p><input type="submit" class="btn btn-rose" value="Voir le détail de mes tâches" /></p>
     </div>
+  </div>
 </div>

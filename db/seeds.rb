@@ -18,9 +18,9 @@ puts "Creating seeds"
 colove = Coloc.new(name:"colove")
 colove.save!
 
-marion = User.new(email:"marion@lewagon.fr", pseudo:"mapiou", coloc: colove, password:"catstyle")
-piero = User.new(email:"piero@lewagon.fr", pseudo:"piero", coloc: colove, password:"sicilian")
-margot = User.new(email:"margot@lewagon.fr", pseudo:"margotte", coloc: colove, password:"ponystyle")
+marion = User.new(email:"marion@lewagon.fr", pseudo:"mapiou", coloc: colove, password:"catstyle", photo:"marion.jpg")
+piero = User.new(email:"piero@lewagon.fr", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
+margot = User.new(email:"margot@lewagon.fr", pseudo:"margotte", coloc: colove, password:"ponystyle", photo:"margot.png")
 marion.save!
 piero.save!
 margot.save!

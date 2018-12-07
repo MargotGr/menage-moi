@@ -1,13 +1,17 @@
 <div class="container">
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
 
-  <h1>Sélectionne les tâches à partager</h1>
+      <h1>Sélectionne les tâches à partager</h1>
 
-  <%= simple_form_for :tasks, url: tasks_select_path do |f| %>
-      <%= f.input :tasks,
-                  label: "Liste des tâches",
-                  as: :check_boxes,
-                  collection: @default_tasks.map { |task| image_tag(Task.find_by(name: task[0]).icon, class: "card_icon", name: task[1]).html_safe } %>
-    <%= f.button :submit %>
-  <% end %>
+      <%= simple_form_for :tasks, url: tasks_select_path do |f| %>
+          <%= f.input :tasks,
+                      label: "Liste des tâches",
+                      as: :check_boxes,
+                      collection: @default_tasks.map { |task| image_tag(Task.find_by(name: task[0]).icon, class: "card_icon", name: task[1]).html_safe } %>
+        <%= f.button :submit, "Enregistrer nos tâches",class: 'btn btn-rose' %>
+      <% end %>
 
+    </div>
+  </div>
 </div>

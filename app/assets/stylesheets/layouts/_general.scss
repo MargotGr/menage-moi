@@ -1,8 +1,26 @@
+body {
+  background-color: #F79F24;
+  color: white;
+}
+
 h1 {
-  font-family: 'Pacifico';
-  margin: 20px;
+  margin: 40px 0;
+  text-align: center;
 }
 
 .container {
   margin-bottom: 50px;
+}
+
+.btn-rose {
+  background-color: #F12D2D;
+  margin: 30px 0;
+}
+
+input {
+  color: black;
+}
+
+input[type="submit"] {
+  color: white;
 }
