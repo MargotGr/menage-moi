@@ -1,28 +1,19 @@
-<div class="row">
-</br>
-    <div class="col-md-8 col-md-offset-2">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Crée ta coloc</h1>
       <%= simple_form_for @coloc do |f| %>
-        <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
+        <%= f.input :name, label: "Nom de ta coloc" %>
+        <p>Envoie un mail à tes colocs pour les inviter :</p>
+        <p>
+          <input type="button" value=" - " onClick="javascript:this.form.champ.value--;">
+          <input type="text" name="champ" value="2">
+          <input type="button" value=" + " onClick="javascript:this.form.champ.value++;">
+      </p>
+        <p><input type="email"></p>
+        <p><input type="email"></p>
+        <%= f.button :submit, "Crée ta coloc", class: 'btn btn-rose' %>
       <% end %>
-  </br>
-      <p>Combien as-tu de colocs?</p>
-
-
-<form>
-<input type="button" value=" - " onClick="javascript:this.form.champ.value--;">
-<input type="text" name="champ" value="2">
-<input type="button" value=" + " onClick="javascript:this.form.champ.value++;">
-</form>
-
-		</br>
-      <p>Envoie un mail à tes colocs pour les inviter </p>
-	<%= email_field(:user, :address) %>
-	<%= email_field(:user, :address) %>
-	<input class= 'btn btn-primary'
-       type="button"
-       value="C'est parti!">
-
-
+    </div>
   </div>
 </div>
