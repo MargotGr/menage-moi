@@ -7,105 +7,105 @@ class TasksController < ApplicationController
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "douche.png"
+      icon: "douche.svg"
     },
     {
       name: "Toilettes",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "toilettes.png"
+      icon: "toilettes.svg"
     },
     {
       name: "Cuisine",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "cuisine.png"
+      icon: "cuisine.svg"
     },
     {
       name: "Vaisselle",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "vaisselle.png"
+      icon: "vaisselle.svg"
     },
     {
       name: "Frigo",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "frigo.png"
+      icon: "frigo.svg"
     },
     {
       name: "Aspirateur",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "aspirateur.png",
+      icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "serpillere.png"
+      icon: "serpilliere.svg"
     },
     {
       name: "Poubelles",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "poubelles.png"
+      icon: "poubelles.svg"
     },
     {
       name: "Poussière",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "poussiere.png"
+      icon: "poussiere.svg"
     },
     {
       name: "Plantes",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "plante.png"
+      icon: "plantes.svg"
     },
     {
       name: "Litière",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "litiere.png"
+      icon: "litiere.svg"
     },
     {
       name: "Canapé",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "canape.png"
+      icon: "canape.svg"
     },
     {
       name: "Cheminée",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "cheminee.png"
+      icon: "cheminee.svg"
     },
     {
       name: "Extérieur",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "exterieur.png"
+      icon: "exterieur.svg"
     },
     {
       name: "Courses",
       description: "Description à définir",
       weight: 20,
       points: 5,
-      icon: "courses.png"
+      icon: "courses.svg"
     }
   ]
 
@@ -121,7 +121,7 @@ class TasksController < ApplicationController
     @week_nb = Time.now.strftime("%U").to_i
     @coloc = current_user.coloc
     @colocs = @coloc.users
-    @selected_tasks = params["tasks"]["tasks"].map { |task| task.chomp("_on") }
+    @selected_tasks = params["tasks"]["tasks"].map { |task| task.split("=")[2].split("_")[0][1..-1] if task.present? }
     @repart = []
 
     # Algorithme de répartition des tâches

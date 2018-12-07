@@ -1,8 +1,61 @@
-.card_task{
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  height: 300px;
+body {
+  background-color: #f79f24;
 }
 
-.card_task:checked{
-  border: 1px solid rgba(110, 110, 110, 1);
+form.tasks input[type="checkbox"] + label img.card_icon, div.plannings img.card_icon_to_do {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  margin: 5px;
+}
+
+form.tasks input[type="checkbox"]:checked + label img.card_icon, div.plannings img.card_icon_done {
+  border: 5px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.2s ease;
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  margin: 5px;
+}
+
+form.tasks input[type="checkbox"] {
+  visibility: hidden;
+}
+
+form.tasks {
+  text-align: center;
+}
+
+form.tasks fieldset legend {
+  display: none;
+}
+
+form.tasks fieldset div, .plannings {
+  display: inline-block;
+}
+
+div.plannings img.card_icon_to_do {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 30%;
+}
+
+div.plannings img.card_icon_done {
+  border: 5px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.2s ease;
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 30%;
 }
