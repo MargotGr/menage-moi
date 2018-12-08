@@ -6,14 +6,14 @@ class TasksController < ApplicationController
       name: "Salle de bain",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 15,
       icon: "douche.svg"
     },
     {
       name: "Toilettes",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 15,
       icon: "toilettes.svg"
     },
     {
@@ -27,7 +27,7 @@ class TasksController < ApplicationController
       name: "Vaisselle",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 18,
       icon: "vaisselle.svg"
     },
     {
@@ -41,14 +41,14 @@ class TasksController < ApplicationController
       name: "Aspirateur",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 10,
       icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 15,
       icon: "serpilliere.svg"
     },
     {
@@ -62,49 +62,49 @@ class TasksController < ApplicationController
       name: "Poussière",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 12,
       icon: "poussiere.svg"
     },
     {
       name: "Plantes",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 10,
       icon: "plantes.svg"
     },
     {
       name: "Litière",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 10,
       icon: "litiere.svg"
     },
     {
       name: "Canapé",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 12,
       icon: "canape.svg"
     },
     {
       name: "Cheminée",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 10,
       icon: "cheminee.svg"
     },
     {
       name: "Extérieur",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 10,
       icon: "exterieur.svg"
     },
     {
       name: "Courses",
       description: "Description à définir",
       weight: 20,
-      points: 5,
+      points: 20,
       icon: "courses.svg"
     }
   ]

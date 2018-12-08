@@ -9,6 +9,7 @@ class PlanningsController < ApplicationController
   def update
     @planning = Planning.find(params[:id])
     @planning.update(completed: true)
+    flash[:alert] = "Cool, tu as réalisé la tâche #{@planning.task.name.downcase} : + #{@planning.task.points} points !"
     redirect_to plannings_path
   end
 end

@@ -2,8 +2,8 @@ form.tasks input[type="checkbox"] + label img.card_icon, div.plannings img.card_
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.2s ease;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   padding: 25px;
   margin: 5px;
 }
@@ -12,8 +12,8 @@ form.tasks input[type="checkbox"]:checked + label img.card_icon, div.plannings i
   border: 5px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.2s ease;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   padding: 15px;
   margin: 5px;
 }
@@ -38,9 +38,9 @@ div.plannings img.card_icon_to_do {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.2s ease;
-  width: 150px;
-  height: 150px;
-  padding: 15px;
+  width: 130px;
+  height: 130px;
+  padding: 20px;
   margin: 5px;
   border-radius: 50%;
 }
@@ -49,9 +49,9 @@ div.plannings img.card_icon_done {
   border: 5px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.2s ease;
-  width: 150px;
-  height: 150px;
-  padding: 5px;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
   margin: 5px;
   border-radius: 50%;
 }
