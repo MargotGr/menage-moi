@@ -1,12 +1,12 @@
-<div class="container-fluid" style="background-color: black;">
+<div class="container-fluid" style="background: linear-gradient(to right, #000000, #434343);">
   <div class="row text-center">
     <div class="col-md-8 col-md-offset-2">
 
-      <h1>It's a match !!!</h1>
+      <h1 style="font-family:'Parisienne'; font-size: 52px; ">It's a Match !</h1>
 
       <p>Voici ton planning pour la semaine :</p>
 
-      <p><%= image_tag current_user.photo, class: "img-circle", height: 150 %></p>
+      <p><%= image_tag current_user.photo, class: "img-match" , height: 150 %></p>
 
       <div class="plannings">
         <% @plannings.each do |planning| %>
