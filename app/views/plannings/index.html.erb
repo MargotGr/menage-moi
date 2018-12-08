@@ -8,6 +8,15 @@
 
       <p><%= image_tag current_user.photo, class: "img-circle", height: 150 %></p>
 
+      <% test_success = @plannings.all? { |planning| planning.completed == true } %>
+      <% if test_success %>
+        <%= render 'gain' %>
+      <% else %>
+        <%= render 'loss' %>
+      <% end %>
+
+      <button class="loss_btn">LOSS</button>
+
       <div class="plannings">
         <% @plannings.each do |planning| %>
 

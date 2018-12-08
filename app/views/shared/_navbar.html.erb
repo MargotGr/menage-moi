@@ -3,12 +3,10 @@
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "logo.png", height: 50 %>
   <% end %>
-  <span style="font-family: 'Pacifico'; margin-left: 20px;">Ménage-moi</span>
+  <span style="font-family: 'Pacifico'; margin-left: 5px; white-space: nowrap;">Ménage-moi</span>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <%= link_to "Créer une coloc", colocs_new_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% if user_signed_in? %>
 
@@ -32,7 +30,7 @@
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fas fa-sign-out-alt"></i> <%= t(".sign_out", default: "Se déconnecter") %>
+                <i class="fas fa-sign-out-alt"></i> <%= t(".sign_out", default: "Déconnexion") %>
               <% end %>
             </li>
           </ul>
@@ -40,7 +38,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Connexion"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
@@ -50,11 +48,11 @@
       <% if user_signed_in? %>
         <%= image_tag current_user.photo, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
       <% else %>
-        <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to t(".sign_in", default: "Connexion"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <% end %>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><%= link_to "Mon planning", plannings_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
-        <li><%= link_to "Ma coloc", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Ma coloc", tasks_select_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
         <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
