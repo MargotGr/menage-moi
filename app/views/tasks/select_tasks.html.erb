@@ -9,7 +9,7 @@
                       label: "Liste des tâches",
                       as: :check_boxes,
                       collection: @default_tasks.map { |task| image_tag(Task.find_by(name: task[0]).icon, class: "card_icon", name: task[1]).html_safe } %>
-        <%= f.button :submit, "Enregistrer nos tâches",class: 'btn btn-rose' %>
+        <%= f.button :submit, "Enregistrer nos tâches",class: 'btn my-btn btn-block' %>
       <% end %>
 
     </div>
