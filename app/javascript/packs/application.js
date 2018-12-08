@@ -1,7 +1,18 @@
 import "bootstrap";
 
-const lossBtn = document.querySelector(".loss_btn");
-const lossDiv = document.querySelector(".loss_div");
+const lossBtn = document.querySelector(".loss-btn");
+const lossDiv = document.querySelector(".hide-loss-div");
+const gainDiv = document.querySelector(".gain-div");
+const closeBtn = document.querySelector(".result-card i");
+
 lossBtn.addEventListener("click", (event) => {
-  lossDiv.classList.add("show_loss");
+  lossDiv.classList.toggle("show-loss-div");
+});
+
+closeBtn.addEventListener("click", (event) => {
+  lossDiv.classList.remove("show-loss-div");
+});
+
+closeBtn.addEventListener("click", (event) => {
+  gainDiv.style.display = "none";
 });

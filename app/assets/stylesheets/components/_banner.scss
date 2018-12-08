@@ -2,12 +2,11 @@
   color: white;
   text-align: center;
   height: calc(100vh - 50px);
-  background-size: cover !important;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.2) 50%), asset-url('home-menage-moi.jpg');
-  background-size: cover;
   background-position: top;
+  background-size: cover;
 }
 
 .banner h1 {
@@ -24,9 +23,10 @@
   margin-top: 10px;
 }
 
-.banner .btn {
-  margin: 100px 10px 10px 10px;
+.banner .btn.my-btn {
+  margin: 80px 10px 10px 10px;
   justify-content: center;
+  width: 75%;
 }
 
 .banner .btn:hover {

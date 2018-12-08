@@ -45,15 +45,6 @@ div.plannings img.card_icon_to_do {
   border-radius: 50%;
 }
 
-.img-match {
-  border: 5px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0);
-  transition: all 0.2s ease;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-}
-
 div.plannings img.card_icon_done {
   border: 5px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0);
@@ -62,5 +53,12 @@ div.plannings img.card_icon_done {
   height: 130px;
   padding: 10px;
   margin: 5px;
+  border-radius: 50%;
+}
+
+.img-match {
+  border: 5px solid rgba(255, 255, 255, 1);
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
 }

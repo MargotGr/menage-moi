@@ -4,6 +4,11 @@ class PlanningsController < ApplicationController
   def index
     @week_nb = Time.now.strftime("%U").to_i
     @plannings = Planning.where(user: current_user, week_nb: @week_nb).order(:id)
+    @success = @plannings.all? { |planning| planning.completed == true }
+    @points = 0;
+    @plannings.each do |planning|
+      @points = @points + planning.task.points if planning.completed == true
+    end
   end
 
   def update
