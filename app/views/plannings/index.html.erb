@@ -10,7 +10,7 @@
 
       <div class="loader"><%= image_tag "https://media.giphy.com/media/xTiTnwBr2eROfOq1Hy/giphy.gif" %></div>
 
-      <h1 style="font-family:'Parisienne'; font-size: 52px; ">It's a Match !</h1>
+      <h1 id="match" style="font-family:'Parisienne'; font-size: 52px; ">It's a Match !</h1>
 
       <p>Voici ton planning pour la semaine :</p>
 
@@ -25,7 +25,8 @@
             icon_class = "card_icon_to_do"
           end %>
 
-          <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
+          <%= link_to image_tag(planning.task.icon, class: icon_class, 'data-planning-id': planning.id), planning_path(planning), method: :patch %>
+          <!-- Ajouter remote: true pour le faire en AJAX -->
 
         <% end %>
       </div>
