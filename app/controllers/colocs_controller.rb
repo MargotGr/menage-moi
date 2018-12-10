@@ -9,7 +9,7 @@ class ColocsController < ApplicationController
     @coloc = Coloc.new(coloc_params)
     @coloc.save
     if @coloc.save
-      flash[:alert] = "Super, tes colocs t'ont rejoint sur Ménage-moi ! Votre coloc a bien été créée !"
+      flash[:alert] = "Super, ta coloc a bien été créée !"
       redirect_to tasks_select_path
     else
       render :new

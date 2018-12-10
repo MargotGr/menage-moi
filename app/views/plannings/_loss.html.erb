@@ -4,7 +4,6 @@
 
   <p><%= image_tag "loss.jpg", class: "img-rounded" %></p>
 
-  <p>Tu as gagné <%= @points %> points cette semaine. Mais désolé, tu as une pénalité de -15 points pour ne pas avoir effectuer toutes tes tâches ! </p>
-  <p>Ton score est donc de <%= @points - 15 %> points.</p>
+  <p style="font-weight: bolder;">Désolé, tu aurais pu gagner <%= @points %> points cette semaine. Mais, vu que tu as été flemmard(e), ton score est tombé à <%= @points - 15 %> points.</p>
 
 </div>

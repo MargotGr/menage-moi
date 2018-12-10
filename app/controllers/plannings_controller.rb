@@ -15,7 +15,7 @@ class PlanningsController < ApplicationController
     @planning = Planning.find(params[:id])
     @planning.update(completed: true)
 
-    flash[:alert] = "Cool, tu as réalisé la tâche #{@planning.task.name.downcase} : + #{@planning.task.points} points !"
+    flash[:alert] = "Cool, tâche #{@planning.task.name.downcase} faite : + #{@planning.task.points} points !"
     redirect_to plannings_path
 
     # Décommenter pour faire de l'AJAX
