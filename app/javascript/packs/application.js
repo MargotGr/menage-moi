@@ -1,4 +1,5 @@
 import "bootstrap";
+import "src/index";
 
 const lossBtn = document.querySelector(".loss-btn");
 const lossDiv = document.querySelector(".hide-loss-div");
