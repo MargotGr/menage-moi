@@ -2,38 +2,35 @@
   <div class="row text-center">
     <div class="col-md-8 col-md-offset-2">
 
-      <h1 style="font-family:'Parisienne'; font-size: 52px; ">It's a Match !</h1>
-
-      <p>Voici ton planning pour la semaine :</p>
-
-      <p><%= image_tag current_user.photo, class: "img-match" , height: 150 %></p>
-
-      <% test_success = @plannings.all? { |planning| planning.completed == true } %>
-      <% if test_success %>
+      <% if @success %>
         <%= render 'gain' %>
       <% else %>
         <%= render 'loss' %>
       <% end %>
 
-      <button class="loss_btn">LOSS</button>
+      <h1 style="font-family:'Parisienne'; font-size: 52px; ">It's a Match !</h1>
+
+      <p>Voici ton planning pour la semaine :</p>
+
+      <p><%= image_tag current_user.photo, class: "img-match", height: 150 %></p>
 
       <div class="plannings">
         <% @plannings.each do |planning| %>
 
           <% if planning.completed == true
-              icon_class = "card_icon_done"
-            else
-              icon_class = "card_icon_to_do"
-            end
-          %>
+            icon_class = "card_icon_done"
+          else
+            icon_class = "card_icon_to_do"
+          end %>
 
           <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
 
         <% end %>
       </div>
 
-      <p><input type="submit" class="btn my-btn btn-block" value="Planning de ma coloc" /></p>
-      <p><input type="submit" class="btn my-btn btn-block" value="Voir le détail de mes tâches" /></p>
+      <p class="loss-btn">LOSS</p>
+      <p class="btn my-btn btn-block">Planning de ma coloc</p>
+      <p class="btn my-btn btn-block">Voir le détail de mes tâches</p>
     </div>
   </div>
 </div>

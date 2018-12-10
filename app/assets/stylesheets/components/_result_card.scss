@@ -1,7 +1,39 @@
-.loss_div {
+.loss-btn {
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+  font-size: 22px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.hide-loss-div {
   display: none;
 }
 
-.show_loss {
+.show-loss-div {
   display: block;
+}
+
+.result-card {
+  position: fixed;
+  right: 5%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  padding: 16px;
+  border-radius: 1%;
+}
+
+.result-card img {
+  width: 80%;
+  height: auto;
+}
+
+.result-card i {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
 }

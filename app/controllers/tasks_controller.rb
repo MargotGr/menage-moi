@@ -122,18 +122,19 @@ class TasksController < ApplicationController
     @coloc = current_user.coloc
     @colocs = @coloc.users
     @selected_tasks = params["tasks"]["tasks"].map { |task| task.split("=")[2].split("_")[0][1..-1] if task.present? }
+    @selected_tasks_nb = @selected_tasks.count - 1
     @repart = []
 
     # Algorithme de répartition des tâches
-    if (@selected_tasks.count % @colocs.count == 0)
+    if (@selected_tasks_nb % @colocs.count == 0)
       @colocs.each do |coloc|
-        (@selected_tasks.count / @colocs.count).times do |i|
+        (@selected_tasks_nb / @colocs.count).times do |i|
           @repart << coloc
         end
       end
     else
       @colocs.each do |coloc|
-        (@selected_tasks.count / @colocs.count).times do |i|
+        (@selected_tasks_nb / @colocs.count).times do |i|
           @repart << coloc
         end
       end
@@ -154,7 +155,7 @@ class TasksController < ApplicationController
       end
     end
     # Affection des tâches de la première semaine
-    @plannings = Planning.last(@selected_tasks.count)
+    @plannings = Planning.last(@selected_tasks_nb)
     @repart.shuffle!
     @plannings.each_with_index do |planning, index|
       planning.update(user: @repart[index])

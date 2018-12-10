@@ -2,8 +2,8 @@
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "logo.svg", height: 50 %>
+    <span>Ménage-moi</span>
   <% end %>
-  <span style="font-family: 'Pacifico'; margin-left: 5px; white-space: nowrap;">Ménage-moi</span>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -11,7 +11,7 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Mon planning", plannings_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Mon planning", plannings_path, class: "navbar-wagon-item navbar-wagon-link navbar-wagon-item-desktop" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
