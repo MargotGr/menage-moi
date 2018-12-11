@@ -145,7 +145,15 @@ initial_tasks = [
     points: 5,
     icon: "courses.svg",
     coloc: colove
-  }
+  },
+  {
+      name: "Ajouter tâche",
+      description: "Description à définir",
+      weight: 20,
+      points: 20,
+      icon: "logo3.svg",
+      coloc: colove
+    }
 ]
 
 initial_tasks.each do |task|

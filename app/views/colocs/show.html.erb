@@ -1,0 +1,17 @@
+<h1>Le planning de la semaine <%= @week_nb %> pour ta coloc: <%= @coloc.name %></h1>
+
+
+<% @colocs.each do |coloc|%>
+  <% @points = 0 %>
+  <%= image_tag coloc.photo %>
+  <% coloc.plannings.where(week_nb:@week_nb).each do |planning| %>
+    <% if planning.completed == true
+            icon_class = "mini_card_icon_done"
+          else
+            icon_class = "mini_card_icon_to_do"
+          end %>
+    <%= image_tag planning.task.icon, class: icon_class %>
+    <% @points = @points + planning.task.points if planning.completed == true %>
+  <% end %>
+  <%= @points %>
+<% end %>
