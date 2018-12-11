@@ -25,8 +25,8 @@
             icon_class = "card_icon_to_do"
           end %>
 
-          <%= link_to image_tag(planning.task.icon, class: icon_class, 'data-planning-id': planning.id), planning_path(planning), method: :patch %>
-          <!-- Ajouter remote: true pour le faire en AJAX -->
+          <%= link_to image_tag(planning.task.icon, class: icon_class), planning_path(planning), method: :patch %>
+          <!-- Ajouter remote: 'data-planning-id': planning.id, true pour le faire en AJAX -->
 
         <% end %>
       </div>
@@ -34,7 +34,9 @@
       <p style="font-weight: lighter; margin-top: 20px;">Quand tu as réalisé l'une de tes tâches, viens cliquer sur son icône.</p>
 
       <p class="loss-btn">LOSS</p>
-      <p class="btn my-btn btn-block">Planning de ma coloc</p>
+      <p>
+        <%= link_to 'Planning de ma coloc', colocs_plannings_path, class: "btn my-btn btn-block" %>
+      </p>
       <p class="btn my-btn btn-block test">Voir le détail de mes tâches</p>
     </div>
   </div>

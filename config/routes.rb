@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'colocs/new', to:'colocs#new'
   post 'colocs', to:'colocs#create'
+  get 'colocs/plannings', to:'colocs#show'
   get 'tasks/select', to:'tasks#select_tasks'
   post 'tasks/select', to:'tasks#save_selection'
   # get 'plannings', to:'plannings#index'
