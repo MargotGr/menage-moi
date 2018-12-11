@@ -1,0 +1,17 @@
+.slot-container {
+
+  background-color: #fe6628;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.slot-machine {
+  margin: 120px 0px;
+  position: center;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+}

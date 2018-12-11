@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # get 'plannings', to:'plannings#index'
   # patch 'plannings/:id', to:'plannings#update', as: 'planning'
   resources :plannings, only: [:index, :update]
+  get 'slotmachine', to: 'plannings#slot_machine'
 end

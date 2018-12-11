@@ -1,2 +1,2 @@
 import "bootstrap";
-import "plannings/index";
+// import "plannings/index";
