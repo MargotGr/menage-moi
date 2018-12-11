@@ -24,8 +24,13 @@
               <% end %>
             </li>
             <li>
-              <%= link_to tasks_select_path do %>
+              <%= link_to colocs_plannings_path do %>
                 <i class="fas fa-users"></i> <%= t(".settings", default: "Ma coloc") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to tasks_select_path do %>
+                <i class="fas fa-cog"></i> <%= t(".settings", default: "Paramètres") %>
               <% end %>
             </li>
             <li>
@@ -52,7 +57,8 @@
       <% end %>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><%= link_to "Mon planning", plannings_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
-        <li><%= link_to "Ma coloc", tasks_select_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Ma coloc", colocs_plannings_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Paramètres", tasks_select_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
         <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
