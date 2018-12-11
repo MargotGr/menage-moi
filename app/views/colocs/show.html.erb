@@ -1,6 +1,6 @@
 <div class="container">
 
-  <h1>Planning de la semaine <%= @week_nb %> pour ta coloc <%= @coloc.name %></h1>
+  <h1>Planning de la semaine <%= @week_nb %> pour ta coloc <%= @coloc.name.capitalize %></h1>
 
   <% @ranking.each do |coloc|%>
     <% @points = 0 %>
