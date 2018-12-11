@@ -3,14 +3,17 @@
 // For example:
 $gray: #C6C6C6;
 $light-gray: #F4F4F4;
-$blue: #4f9da6;
-$green: #318984;
-$yellow: #fccf4d;
-$red: #e9114f;
-$orange: #FE6628;
+$blue: #3AB795;
+$green: #43967C;
+$yellow: #f7de1c;
+$red: #E84340;
+$dark-red: #D33D3B;
+$orange: #FE6628; // Ne pas changer !
+$light-orange: #FFA730;
+$dark-orange: #E75D25;
 
 // My color:
-$my-bg-color: #fccf4d;
-$my-nav-color: #49beb7;
-$my-btn-color: #ef255f;
-$my-btn-color-hover: #e9114f;
+$my-bg-color: $light-orange;
+$my-nav-color: $blue;
+$my-btn-color: $red;
+$my-btn-color-hover: $dark-red;
