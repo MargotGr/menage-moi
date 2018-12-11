@@ -20,7 +20,6 @@ class ColocsController < ApplicationController
     @week_nb = Time.now.strftime("%U").to_i
     @coloc = current_user.coloc
     @colocs = @coloc.users
-
   end
 
   private
