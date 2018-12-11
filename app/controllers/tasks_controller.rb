@@ -168,6 +168,6 @@ class TasksController < ApplicationController
       planning.update(user: @repart[index])
     end
 
-    redirect_to plannings_path
+    redirect_to slotmachine_path
   end
 end

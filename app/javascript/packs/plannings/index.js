@@ -1,11 +1,11 @@
 import $ from 'jquery';
 
 // Slot Machine
-$(document).ready(function() {
-  $(window).on('load', function() {
-    $(".loader").delay(1000).fadeOut(500);
-  });
-});
+// $(document).ready(function() {
+//   $(window).on('load', function() {
+//     $(".loader").delay(1000).fadeOut(500);
+//   });
+// });
 
 // Gestion de la partial loss
 var lossBtn = document.querySelector(".loss-btn");

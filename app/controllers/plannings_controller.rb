@@ -18,10 +18,13 @@ class PlanningsController < ApplicationController
     flash[:notice] = "Cool, tâche #{@planning.task.name.downcase} faite : + #{@planning.task.points} ⭐🌟"
     redirect_to plannings_path
 
-    # Décommenter pour faire de l'AJAX
+    # Decommenter pour faire de l'AJAX
     # respond_to do |format|
     #   format.html { redirect_to plannings_path }
     #   format.js
     # end
+  end
+
+  def slot_machine
   end
 end

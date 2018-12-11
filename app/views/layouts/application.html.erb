@@ -17,5 +17,9 @@
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+    <% if File.exist?("app/javascript/packs/#{params[:controller]}/#{params[:action]}.js") %>
+      <%= javascript_pack_tag "#{params[:controller]}/#{params[:action]}" %>
+    <% end %>
   </body>
 </html>
+
