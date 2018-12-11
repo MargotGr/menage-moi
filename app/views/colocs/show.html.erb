@@ -1,6 +1,6 @@
 <div class="container">
 
-  <h1>Planning de la semaine <%= @week_nb %> pour ta coloc <%= @coloc.name.capitalize %></h1>
+  <h1>Planning <%= @coloc.name.capitalize %></h1>
 
   <% @ranking.each do |coloc|%>
     <% @points = 0 %>
@@ -29,7 +29,7 @@
   <% end %>
 
   <p>
-    <%= link_to '<< Mon planning', plannings_path, class: "btn my-btn btn-block" %>
+    <%= link_to 'Retour à mon planning', plannings_path, class: "btn my-btn btn-block" %>
   </p>
 
 </div>
