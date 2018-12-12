@@ -15,12 +15,12 @@ Coloc.destroy_all
 
 puts "Creating seeds"
 
-colove = Coloc.new(name:"colove")
+colove = Coloc.new(name:"joyeux bordel")
 colove.save!
 
-marion = User.new(email:"marion@lewagon.fr", pseudo:"mapiou", coloc: colove, password:"catstyle", photo:"marion.jpg")
-piero = User.new(email:"piero@lewagon.fr", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
-margot = User.new(email:"margot@lewagon.fr", pseudo:"margotte", coloc: colove, password:"ponystyle", photo:"margot.png")
+marion = User.new(email:"aude.vaisselle@email.fake", pseudo:"mapiou", coloc: colove, password:"catstyle", photo:"marion.jpg")
+piero = User.new(email:"jacques.ouzi@email.fake", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
+margot = User.new(email:"margot.gole@email.fake", pseudo:"margotte", coloc: colove, password:"ponystyle", photo:"margot.jpg")
 marion.save!
 piero.save!
 margot.save!
@@ -29,7 +29,7 @@ initial_tasks = [
   {
     name: "Salle de bain",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "douche.svg",
     coloc: colove
@@ -37,7 +37,7 @@ initial_tasks = [
   {
     name: "Toilettes",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "toilettes.svg",
     coloc: colove
@@ -45,7 +45,7 @@ initial_tasks = [
   {
     name: "Cuisine",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "cuisine.svg",
     coloc: colove
@@ -53,7 +53,7 @@ initial_tasks = [
   {
     name: "Vaisselle",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "vaisselle.svg",
     coloc: colove
@@ -61,7 +61,7 @@ initial_tasks = [
   {
     name: "Frigo",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "frigo.svg",
     coloc: colove
@@ -69,7 +69,7 @@ initial_tasks = [
   {
     name: "Aspirateur",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "aspirateur.svg",
     coloc: colove
@@ -77,7 +77,7 @@ initial_tasks = [
   {
     name: "Serpillière",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "serpilliere.svg",
     coloc: colove
@@ -85,7 +85,7 @@ initial_tasks = [
   {
     name: "Poubelles",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "poubelles.svg",
     coloc: colove
@@ -93,7 +93,7 @@ initial_tasks = [
   {
     name: "Poussière",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "poussiere.svg",
     coloc: colove
@@ -101,7 +101,7 @@ initial_tasks = [
   {
     name: "Plantes",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "plantes.svg",
     coloc: colove
@@ -109,7 +109,7 @@ initial_tasks = [
   {
     name: "Litière",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "litiere.svg",
     coloc: colove
@@ -117,7 +117,7 @@ initial_tasks = [
   {
     name: "Canapé",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "canape.svg",
     coloc: colove
@@ -125,7 +125,7 @@ initial_tasks = [
   {
     name: "Cheminée",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "cheminee.svg",
     coloc: colove
@@ -133,7 +133,7 @@ initial_tasks = [
   {
     name: "Extérieur",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "exterieur.svg",
     coloc: colove
@@ -141,7 +141,7 @@ initial_tasks = [
   {
     name: "Courses",
     description: "Description à définir",
-    weight: 20,
+    weight: 0,
     points: 5,
     icon: "courses.svg",
     coloc: colove
@@ -149,7 +149,7 @@ initial_tasks = [
   {
       name: "Ajouter tâche",
       description: "Description à définir",
-      weight: 20,
+      weight: 0,
       points: 20,
       icon: "logo3.svg",
       coloc: colove
@@ -160,17 +160,17 @@ initial_tasks.each do |task|
   Task.create(task)
 end
 
-planning1 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Salle de bain"))
-planning2 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Plantes"))
-planning3 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Aspirateur"))
-planning4 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Cuisine"))
-planning5 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Toilettes"))
-planning6 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Litière"))
-planning1.save!
-planning2.save!
-planning3.save!
-planning4.save!
-planning5.save!
-planning6.save!
+#planning1 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Salle de bain"))
+#planning2 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Plantes"))
+#planning3 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Aspirateur"))
+#planning4 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Cuisine"))
+#planning5 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Toilettes"))
+#planning6 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Litière"))
+#planning1.save!
+#planning2.save!
+#planning3.save!
+#planning4.save!
+#planning5.save!
+#planning6.save!
 
 puts "Seeds created"
