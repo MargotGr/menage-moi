@@ -27,7 +27,12 @@ class ColocsController < ApplicationController
       coloc.plannings.where(week_nb:@week_nb).each do |planning|
         @points = @points + planning.task.points if planning.completed == true
       end
-      @ranking << [coloc, @points]
+      if coloc.plannings.where(week_nb:@week_nb).all? { |planning| planning.completed == true }
+        @ranking << [coloc, @points]
+      else
+        @points = @points - 15
+        @ranking << [coloc, @points]
+      end
     end
 
     @ranking.sort! do |a, b|

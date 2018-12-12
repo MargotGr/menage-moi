@@ -18,9 +18,9 @@ puts "Creating seeds"
 colove = Coloc.new(name:"joyeux bordel")
 colove.save!
 
-marion = User.new(email:"marion.nou@gmail.com", pseudo:"mapiou", coloc: colove, password:"catstyle", photo:"marion.jpg")
+marion = User.new(email:"marion.nou@gmail.com", pseudo:"marion", coloc: colove, password:"catstyle", photo:"marion.jpg")
 piero = User.new(email:"piero.binet@gmail.com", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
-margot = User.new(email:"margot.gole@hotmail.fr", pseudo:"margotte", coloc: colove, password:"ponystyle", photo:"margot.jpg")
+margot = User.new(email:"margot.gole@hotmail.fr", pseudo:"margot", coloc: colove, password:"ponystyle", photo:"margot.jpg")
 marion.save!
 piero.save!
 margot.save!
@@ -30,7 +30,7 @@ initial_tasks = [
     name: "Salle de bain",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "douche.svg",
     coloc: colove
   },
@@ -38,7 +38,7 @@ initial_tasks = [
     name: "Toilettes",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "toilettes.svg",
     coloc: colove
   },
@@ -46,7 +46,7 @@ initial_tasks = [
     name: "Cuisine",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "cuisine.svg",
     coloc: colove
   },
@@ -54,7 +54,7 @@ initial_tasks = [
     name: "Vaisselle",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "vaisselle.svg",
     coloc: colove
   },
@@ -62,7 +62,7 @@ initial_tasks = [
     name: "Frigo",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "frigo.svg",
     coloc: colove
   },
@@ -70,7 +70,7 @@ initial_tasks = [
     name: "Aspirateur",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "aspirateur.svg",
     coloc: colove
   },
@@ -78,7 +78,7 @@ initial_tasks = [
     name: "Serpillière",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "serpilliere.svg",
     coloc: colove
   },
@@ -86,7 +86,7 @@ initial_tasks = [
     name: "Poubelles",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "poubelles.svg",
     coloc: colove
   },
@@ -94,7 +94,7 @@ initial_tasks = [
     name: "Poussière",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "poussiere.svg",
     coloc: colove
   },
@@ -102,7 +102,7 @@ initial_tasks = [
     name: "Plantes",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "plantes.svg",
     coloc: colove
   },
@@ -110,7 +110,7 @@ initial_tasks = [
     name: "Litière",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "litiere.svg",
     coloc: colove
   },
@@ -118,7 +118,7 @@ initial_tasks = [
     name: "Canapé",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "canape.svg",
     coloc: colove
   },
@@ -126,7 +126,7 @@ initial_tasks = [
     name: "Cheminée",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "cheminee.svg",
     coloc: colove
   },
@@ -134,7 +134,7 @@ initial_tasks = [
     name: "Extérieur",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "exterieur.svg",
     coloc: colove
   },
@@ -142,17 +142,17 @@ initial_tasks = [
     name: "Courses",
     description: "Description à définir",
     weight: 0,
-    points: 5,
+    points: 0,
     icon: "courses.svg",
     coloc: colove
   },
   {
-      name: "Ajouter tâche",
-      description: "Description à définir",
-      weight: 0,
-      points: 20,
-      icon: "logo3.svg",
-      coloc: colove
+    name: "Ajouter tâche",
+    description: "Description à définir",
+    weight: 0,
+    points: 0,
+    icon: "logo3.svg",
+    coloc: colove
     }
 ]
 
