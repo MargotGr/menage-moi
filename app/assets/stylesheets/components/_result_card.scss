@@ -18,12 +18,14 @@
   background-color: $light-orange;
   color: white;
   padding: 40px 16px;
-  border-radius: 1%;
+  border-radius: 2%;
 }
 
 .result-card img {
   width: 80%;
   height: auto;
+  border: 5px solid white;
+  border-radius: 2%;
 }
 
 .result-card i {
