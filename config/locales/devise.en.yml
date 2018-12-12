@@ -10,13 +10,13 @@ en:
       # already_authenticated: "You are already signed in."
       already_authenticated: "Tu es déjà connecté(e)."
       inactive: "Your account is not activated yet."
-      invalid: "Invalid %{authentication_keys} or password."
+      invalid: " %{authentication_keys} ou Mot de passe erronés."
       locked: "Your account is locked."
       last_attempt: "You have one more attempt before your account is locked."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
+      not_found_in_database: "%{authentication_keys} ou Mot de passe erronés."
       timeout: "Your session expired. Please sign in again to continue."
       # unauthenticated: "You need to sign in or sign up before continuing."
-      unauthenticated: "tu dois te connecter avant de continer."
+      unauthenticated: "Tu dois te connecter avant de continuer."
       unconfirmed: "You have to confirm your email address before continuing."
     mailer:
       confirmation_instructions:
