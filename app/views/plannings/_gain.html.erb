@@ -4,6 +4,6 @@
 
   <p><%= image_tag "gain.jpg", class: "img-rounded" %></p>
 
-  <p style="font-weight: bolder;">Bravo, ton score est de <%= @points %> points ! Plus que 65 points avant le gâteau/apéro offert par tes colocs !</p>
+  <p style="font-weight: bolder;">Bravo, <%= current_user.pseudo.capitalize %>, ton score est de <%= @points %> points ! Plus que 65 points avant le gâteau/apéro offert par tes colocs !</p>
 
 </div>
