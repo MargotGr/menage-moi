@@ -48,7 +48,7 @@ div.plannings img.card_icon_to_do {
 }
 
 div.plannings img.card_icon_done {
-  border: 5px solid rgba(255, 255, 255, 1);
+  border: 5px solid $green;
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.2s ease;
   width: 130px;
