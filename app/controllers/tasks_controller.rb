@@ -4,14 +4,14 @@ class TasksController < ApplicationController
   INITIAL_TASKS = [
     {
       name: "Salle de bain",
-      description: "Cool!ça sent bon le savon de marseille",
+      description: "Cool ! Ça sent bon le propre 🛀",
       weight: 20,
       points: 15,
       icon: "douche.svg"
     },
     {
       name: "Toilettes",
-      description: "Chouette!on voit le fond de la cuvette🚾",
+      description: "Chouette ! On peut voir le fond de la cuvette 🚾",
       weight: 20,
       points: 15,
       icon: "toilettes.svg"
@@ -25,14 +25,14 @@ class TasksController < ApplicationController
     },
     {
       name: "Vaisselle",
-      description: "la vaisselle n'est plus dans l'évier!",
+      description: "La vaisselle n'est plus dans l'évier, c'est nickel",
       weight: 20,
       points: 18,
       icon: "vaisselle.svg"
     },
     {
       name: "Frigo",
-      description: "enfin le camembert qui pue n'est plus dans le frigo",
+      description: "Enfin le fromage périmé depuis des jours n'est plus dans le frigo",
       weight: 20,
       points: 5,
       icon: "frigo.svg"
@@ -53,7 +53,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Poubelles",
-      description: "adieu les mouches! les poubelles sont sorties",
+      description: "Adieu les mouches ! Les poubelles sont sorties",
       weight: 20,
       points: 5,
       icon: "poubelles.svg"
@@ -67,7 +67,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Plantes",
-      description: "mère nature te remercie",
+      description: "Mère nature te remercie",
       weight: 20,
       points: 10,
       icon: "plantes.svg"
