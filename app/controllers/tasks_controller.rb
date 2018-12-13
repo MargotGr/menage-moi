@@ -11,7 +11,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Toilettes",
-      description: "Chouette ! On peut voir le fond de la cuvette ✔  🚾",
+      description: "Chouette ! On peut voir le fond de la cuvette ✔ 🚾",
       weight: 20,
       points: 15,
       icon: "toilettes.svg"
@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Vaisselle",
-      description: "Perfetto! La vaisselle est faite, 'mamma' doit être fière de toi ✔",
+      description: "Perfetto ! La vaisselle est faite, 'mamma' doit être fière de toi ✔",
       weight: 20,
       points: 18,
       icon: "vaisselle.svg"
@@ -39,14 +39,14 @@ class TasksController < ApplicationController
     },
     {
       name: "Aspirateur",
-      description: "Super! Plus une miette par terre, c'est nickel ✔",
+      description: "Super ! Plus une miette par terre, c'est nickel ✔",
       weight: 20,
       points: 10,
       icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
-      description: "Ça brille! Monsieur Propre n'a qu'à bien se tenir ✔",
+      description: "Ça brille ! Monsieur Propre n'a qu'à bien se tenir ✔",
       weight: 20,
       points: 15,
       icon: "serpilliere.svg"
@@ -60,7 +60,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Poussière",
-      description: "Atchoum ! ça y est, fini la poussière ✔",
+      description: "Atchoum ! Ça y est, fini la poussière ✔",
       weight: 20,
       points: 12,
       icon: "poussiere.svg"
@@ -74,7 +74,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Litière",
-      description: "Miaou! Whiskas est content ✔",
+      description: "Miaou ! Whiskas est content ✔",
       weight: 20,
       points: 10,
       icon: "litiere.svg"
