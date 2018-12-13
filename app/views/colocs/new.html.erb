@@ -6,13 +6,14 @@
       <h1>Crée ta coloc</h1>
       <%= simple_form_for @coloc do |f| %>
         <%= f.input :name, label: "Nom de ta coloc", error: "Sorry bro ! Tu dois donner un nom à ta coloc." %>
-        <div style="margin: 30px 0;">
-          <p>Envoie un mail à tes colocs pour les inviter :</p>
+        <div style="margin: 20px 0;">
+          <p>Combien de colocs as-tu ?</p>
           <p style="text-align: center;">
             <input type="button" value=" - " onClick="javascript:this.form.champ.value--;" style="background-color: #3AB795; color: white; font-weight: bold;">
             <input type="text" name="champ" value="2" style="text-align: center; width: 20%;">
             <input type="button" value=" + " onClick="javascript:this.form.champ.value++;" style="background-color: #3AB795; color: white; font-weight: bold;">
           </p>
+          <p style="margin-top: 20px;">Invite-les par mail :</p>
           <p><input type="email" placeholder= "coloc@email.com" style="width: 100%;"></p>
           <p><input type="email" placeholder= "coloc@email.com" style="width: 100%;"></p>
         </div>
