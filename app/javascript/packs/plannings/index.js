@@ -10,7 +10,7 @@ import $ from 'jquery';
 // Gestion de la partial loss
 var lossBtn = document.querySelector(".loss-btn");
 var lossDiv = document.querySelector(".hidden-loss-div");
-var closeBtnLoss = document.querySelector("#loss.result-card i");
+var closeBtnLoss = document.querySelector("#loss i");
 
 lossBtn.addEventListener("click", (event) => {
   lossDiv.classList.remove("hidden-loss-div");
@@ -24,7 +24,7 @@ if (closeBtnLoss !== null) {
 
 // Gestion de la partial gain
 var gainDiv = document.querySelector(".gain-div");
-var closeBtnGain = document.querySelector("#gain.result-card i");
+var closeBtnGain = document.querySelector("#gain i");
 
 if (closeBtnGain !== null) {
   closeBtnGain.addEventListener("click", (event) => {
