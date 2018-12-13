@@ -4,7 +4,11 @@
 
     <i class="fas fa-times-circle"></i>
 
-  <p>Désolé <%= current_user.pseudo.capitalize %>, <br>tu aurais pu gagner <%= @points %> ⭐. Mais ta flemme a fait tomber <strong>ton score à <%= @points - 15 %> ⭐</strong>.</p>
+    <p><strong>Désolé <%= current_user.pseudo.capitalize %></strong>, <br>tu aurais pu gagner <%= @points %> ⭐. Mais ta flemme a fait tomber <strong>ton score à <%= @points - 15 %> ⭐</strong>.</p>
+
+    <p>
+      <%= link_to 'Voir le score de mes colocs', colocs_plannings_path, class: "btn my-link btn-block" %>
+    </p>
 
   </div>
 </div>
