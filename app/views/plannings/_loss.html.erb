@@ -4,6 +4,6 @@
 
   <p><%= image_tag "loss.jpg", class: "img-rounded" %></p>
 
-  <p style="font-weight: bolder;">Désolé, <%= current_user.pseudo.capitalize %>, tu étais à ça de gagner <%= @points %> points. Mais ta flemme a fait tomber ton score à <%= @points - 15 %> points.</p>
+  <p style="font-weight: bolder;">Désolé <%= current_user.pseudo.capitalize %>, tu aurais pu gagner <%= @points %> ⭐. Mais ta flemme a fait tomber ton score à <%= @points - 15 %> ⭐</p>
 
 </div>
