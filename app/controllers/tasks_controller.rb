@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Vaisselle",
-      description: "La vaisselle n'est plus dans l'évier, c'est nickel ✔",
+      description: "Perfetto! La vaisselle est faite, 'mamma' doit être fière de toi ✔",
       weight: 20,
       points: 18,
       icon: "vaisselle.svg"
@@ -39,14 +39,14 @@ class TasksController < ApplicationController
     },
     {
       name: "Aspirateur",
-      description: "Cool, plus une miette par terre ✔",
+      description: "Super! Plus une miette par terre, c'est nickel ✔",
       weight: 20,
       points: 10,
       icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
-      description: "Ça brille! ✔",
+      description: "Ça brille! Monsieur Propre n'a qu'à bien se tenir ✔",
       weight: 20,
       points: 15,
       icon: "serpilliere.svg"
@@ -81,7 +81,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Canapé",
-      description: "Canapé en ordre ✔",
+      description: "Le canap est rangé, tu vas pouvoir mater ta série ✔",
       weight: 20,
       points: 12,
       icon: "canape.svg"
