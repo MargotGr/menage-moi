@@ -1,9 +1,10 @@
-<div id="gain" class="result-card gain-div">
+<div class="result-card gain-div">
+  <div><%= image_tag "gain.jpg", class: "img-rounded" %></div>
+  <div id="gain">
 
   <i class="fas fa-times-circle"></i>
 
-  <p><%= image_tag "gain.jpg", class: "img-rounded" %></p>
+  <p>Bravo <%= current_user.pseudo.capitalize %>, <br>ton score est de <%= @points %>  ⭐ ! <strong>Plus que 65  ⭐</strong> avant l'apéro organisé par tes colocs !</p>
 
-  <p style="font-weight: bolder;">Bravo, <%= current_user.pseudo.capitalize %>, ton score est de <%= @points %>  ⭐ ! Plus que 65  ⭐ avant l'apéro organisé par tes colocs !</p>
-
+  </div>
 </div>
