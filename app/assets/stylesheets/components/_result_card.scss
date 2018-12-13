@@ -13,25 +13,32 @@
 
 .result-card {
   position: fixed;
-  right: 5%;
-  left: 5%;
-  background-color: $light-orange;
+  right: 10%;
+  left: 10%;
+  background: linear-gradient(120deg, rgb(255, 167, 48) 30%, rgb(254, 102, 40) 70%);
   color: white;
-  padding: 40px 16px;
   border-radius: 2%;
 }
 
 .result-card img {
-  width: 80%;
+  width: 90%;
   height: auto;
   border: 5px solid white;
   border-radius: 2%;
+  margin-top: 10px;
 }
 
 .result-card i {
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -10px;
+  right: -10px;
   font-size: 20px;
+}
+
+.result-card p {
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 16px;
 }

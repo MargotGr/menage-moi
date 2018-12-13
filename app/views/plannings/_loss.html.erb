@@ -1,9 +1,10 @@
-<div id="loss" class="result-card hidden-loss-div">
+<div class="result-card hidden-loss-div">
+  <div><%= image_tag "loss.jpg", class: "img-rounded" %></div>
+  <div id="loss">
 
-  <i class="fas fa-times"></i>
+    <i class="fas fa-times-circle"></i>
 
-  <p><%= image_tag "loss.jpg", class: "img-rounded" %></p>
+    <p>Désolé <%= current_user.pseudo.capitalize %>, <br>tu étais à ça de gagner <%= @points %> points. Mais ta flemme a fait tomber <strong>ton score à <%= @points - 15 %> points</strong>.</p>
 
-  <p style="font-weight: bolder;">Désolé, <%= current_user.pseudo.capitalize %>, tu étais à ça de gagner <%= @points %> points. Mais ta flemme a fait tomber ton score à <%= @points - 15 %> points.</p>
-
+  </div>
 </div>
