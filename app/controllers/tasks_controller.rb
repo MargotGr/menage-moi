@@ -4,112 +4,112 @@ class TasksController < ApplicationController
   INITIAL_TASKS = [
     {
       name: "Salle de bain",
-      description: "Cool ! Ça sent bon le propre 🛀",
+      description: "Cool ! Ça sent bon le propre ✔ 🛀",
       weight: 20,
       points: 15,
       icon: "douche.svg"
     },
     {
       name: "Toilettes",
-      description: "Chouette ! On peut voir le fond de la cuvette 🚾",
+      description: "Chouette ! On peut voir le fond de la cuvette ✔  🚾",
       weight: 20,
       points: 15,
       icon: "toilettes.svg"
     },
     {
       name: "Cuisine",
-      description: "Description à définir",
+      description: "Monsieur Propre est passé dans la cuisine ✔",
       weight: 20,
       points: 5,
       icon: "cuisine.svg"
     },
     {
       name: "Vaisselle",
-      description: "La vaisselle n'est plus dans l'évier, c'est nickel",
+      description: "La vaisselle n'est plus dans l'évier, c'est nickel ✔",
       weight: 20,
       points: 18,
       icon: "vaisselle.svg"
     },
     {
       name: "Frigo",
-      description: "Enfin le fromage périmé depuis des jours n'est plus dans le frigo",
+      description: "Enfin le fromage périmé depuis des jours n'est plus dans le frigo ✔",
       weight: 20,
       points: 5,
       icon: "frigo.svg"
     },
     {
       name: "Aspirateur",
-      description: "Description à définir",
+      description: "Cool, plus une miette par terre ✔",
       weight: 20,
       points: 10,
       icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
-      description: "Description à définir",
+      description: "Ça brille! ✔",
       weight: 20,
       points: 15,
       icon: "serpilliere.svg"
     },
     {
       name: "Poubelles",
-      description: "Adieu les mouches ! Les poubelles sont sorties",
+      description: "Adieu les mouches ! Les poubelles sont sorties ✔",
       weight: 20,
       points: 5,
       icon: "poubelles.svg"
     },
     {
       name: "Poussière",
-      description: "Description à définir",
+      description: "Atchoum ! ça y est, fini la poussière ✔",
       weight: 20,
       points: 12,
       icon: "poussiere.svg"
     },
     {
       name: "Plantes",
-      description: "Mère nature te remercie",
+      description: "Mère nature te remercie ✔",
       weight: 20,
       points: 10,
       icon: "plantes.svg"
     },
     {
       name: "Litière",
-      description: "Description à définir",
+      description: "Miaou! Whiskas est content ✔",
       weight: 20,
       points: 10,
       icon: "litiere.svg"
     },
     {
       name: "Canapé",
-      description: "Description à définir",
+      description: "Canapé en ordre ✔",
       weight: 20,
       points: 12,
       icon: "canape.svg"
     },
     {
       name: "Cheminée",
-      description: "Description à définir",
+      description: "Père Nöel peut enfin repasser par la cheminée ✔",
       weight: 20,
       points: 10,
       icon: "cheminee.svg"
     },
     {
       name: "Extérieur",
-      description: "Description à définir",
+      description: "C'est nickel dehors ✔",
       weight: 20,
       points: 10,
       icon: "exterieur.svg"
     },
     {
       name: "Courses",
-      description: "Description à définir",
+      description: "Il était temps, on va bien manger ✔",
       weight: 20,
       points: 20,
       icon: "courses.svg"
     },
     {
       name: "Ajouter tâche",
-      description: "Description à définir",
+      description: "Description à définir ",
       weight: 20,
       points: 20,
       icon: "logo3.svg"
