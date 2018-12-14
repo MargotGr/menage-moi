@@ -18,7 +18,7 @@ puts "Creating seeds"
 colove = Coloc.new(name:"joyeux bordel")
 colove.save!
 
-marion = User.new(email:"marion.nou@gmail.com", pseudo:"marion", coloc: colove, password:"catstyle", photo:"marion.jpg")
+marion = User.new(email:"marion.nou@gmail.com", pseudo:"marion", coloc: colove, password:"azerty", photo:"marion.jpg")
 piero = User.new(email:"piero.binet@gmail.com", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
 margot = User.new(email:"margot.gole@hotmail.fr", pseudo:"margot", coloc: colove, password:"ponystyle", photo:"margot.jpg")
 marion.save!
