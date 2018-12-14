@@ -4,14 +4,14 @@ class TasksController < ApplicationController
   INITIAL_TASKS = [
     {
       name: "Salle de bain",
-      description: "Cool ! Ça sent bon le propre ✔ 🛀",
+      description: "Cool ! Ça sent bon le propre 🛀✔",
       weight: 20,
       points: 15,
       icon: "douche.svg"
     },
     {
       name: "Toilettes",
-      description: "Chouette ! On peut voir le fond de la cuvette ✔ 🚾",
+      description: "Chouette ! On peut voir le fond de la cuvette 🚾✔",
       weight: 20,
       points: 15,
       icon: "toilettes.svg"
@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Vaisselle",
-      description: "Perfetto ! La vaisselle est faite, 'mamma' doit être fière de toi ✔",
+      description: "Perfetto ! La vaisselle est faite, la 'Mamma' doit être fière de toi 🍽✔",
       weight: 20,
       points: 18,
       icon: "vaisselle.svg"
@@ -39,14 +39,14 @@ class TasksController < ApplicationController
     },
     {
       name: "Aspirateur",
-      description: "Super ! Plus une miette par terre, c'est nickel ✔",
+      description: "On pourrait manger par terre, c'est nickel ✨✔",
       weight: 20,
       points: 10,
       icon: "aspirateur.svg"
     },
     {
       name: "Serpillière",
-      description: "Ça brille ! Monsieur Propre n'a qu'à bien se tenir ✔",
+      description: "Ça sent bon le savon de Marseille ! Monsieur Propre n'a qu'à bien se tenir 🌈✔",
       weight: 20,
       points: 15,
       icon: "serpilliere.svg"
@@ -60,14 +60,14 @@ class TasksController < ApplicationController
     },
     {
       name: "Poussière",
-      description: "Atchoum ! Ça y est, fini la poussière ✔",
+      description: "Atchoum ! Ça y est, fini la poussière 🌪✔",
       weight: 20,
       points: 12,
       icon: "poussiere.svg"
     },
     {
       name: "Plantes",
-      description: "Mère nature te remercie ✔",
+      description: "Mère nature te remercie 🌻✔",
       weight: 20,
       points: 10,
       icon: "plantes.svg"
@@ -81,7 +81,7 @@ class TasksController < ApplicationController
     },
     {
       name: "Canapé",
-      description: "Le canap est rangé, tu vas pouvoir mater ta série ✔",
+      description: "Le canap est en ordre, tu vas pouvoir mater ta série 📺✔",
       weight: 20,
       points: 12,
       icon: "canape.svg"
