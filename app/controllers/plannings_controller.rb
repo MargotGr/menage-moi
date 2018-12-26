@@ -5,9 +5,11 @@ class PlanningsController < ApplicationController
     @week_nb = Time.now.strftime("%U").to_i
     @plannings = Planning.where(user: current_user, week_nb: @week_nb).order(:id)
     @success = @plannings.all? { |planning| planning.completed == true }
+    @score = (Planning.where(user: current_user).last).user.score.to_i
     @points = 0
     @plannings.each do |planning|
       @points = @points + planning.task.points if planning.completed == true
+      @score = @points
     end
   end
 
@@ -27,4 +29,5 @@ class PlanningsController < ApplicationController
 
   def slot_machine
   end
+
 end
