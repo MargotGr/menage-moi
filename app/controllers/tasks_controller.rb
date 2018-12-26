@@ -107,13 +107,13 @@ class TasksController < ApplicationController
       points: 20,
       icon: "courses.svg"
     },
-    {
-      name: "Ajouter tâche",
-      description: "Description à définir ",
-      weight: 20,
-      points: 20,
-      icon: "logo3.svg"
-    }
+    # {
+    #   name: "Ajouter tâche",
+    #   description: "Description à définir ",
+    #   weight: 20,
+    #   points: 20,
+    #   icon: "logo3.svg"
+    # }
   ]
 
   def select_tasks
