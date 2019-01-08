@@ -15,12 +15,12 @@ Coloc.destroy_all
 
 puts "Creating seeds"
 
-colove = Coloc.new(name:"joyeux bordel")
+colove = Coloc.new(name:"joyeux bordel", id:108)
 colove.save!
 
 marion = User.new(email:"marion.nou@gmail.com", pseudo:"marion", coloc: colove, password:"azerty", photo:"marion.jpg")
 piero = User.new(email:"piero.binet@gmail.com", pseudo:"piero", coloc: colove, password:"sicilian", photo:"piero.jpg")
-margot = User.new(email:"margot.gole@hotmail.fr", pseudo:"margot", coloc: colove, password:"ponystyle", photo:"margot.jpg", score:23)
+margot = User.new(email:"margot.gole@hotmail.fr", pseudo:"margot", coloc: colove, password:"ponystyle", photo:"margot.jpg")
 marion.save!
 piero.save!
 margot.save!
@@ -160,17 +160,17 @@ initial_tasks.each do |task|
   Task.create(task)
 end
 
-#planning1 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Salle de bain"))
-#planning2 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Plantes"))
+planning1 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Salle de bain"))
+planning2 = Planning.new(week_nb:1, completed: false, user: marion, task: Task.find_by(name: "Plantes"))
 planning3 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Aspirateur"))
 planning4 = Planning.new(week_nb:1, completed: false, user: margot, task: Task.find_by(name: "Cuisine"))
-#planning5 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Toilettes"))
-#planning6 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Litière"))
-#planning1.save!
-#planning2.save!
+planning5 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Toilettes"))
+planning6 = Planning.new(week_nb:1, completed: false, user: piero, task: Task.find_by(name: "Litière"))
+planning1.save!
+planning2.save!
 planning3.save!
 planning4.save!
-#planning5.save!
-#planning6.save!
+planning5.save!
+planning6.save!
 
 puts "Seeds created"
