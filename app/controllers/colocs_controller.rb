@@ -1,6 +1,5 @@
 class ColocsController < ApplicationController
   # skip_before_action :authenticate_user!
-
   def new
     @coloc = Coloc.new
   end
@@ -9,6 +8,10 @@ class ColocsController < ApplicationController
     @coloc = Coloc.new(coloc_params)
     @coloc.save
     if @coloc.save
+      current_user.coloc_id = Coloc.where(id:@coloc.id).ids.join.to_i
+      current_user.save
+      # ColocMailer.creation_confirmation(@coloc, current_user).deliver_now
+      # ColocMailer.invitation_coloc(@coloc, current_user).deliver_now
       flash[:notice] = "Super, ta coloc a bien été créée !"
       redirect_to tasks_select_path
     else
