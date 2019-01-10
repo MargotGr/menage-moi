@@ -5,5 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :plannings
   belongs_to :coloc
-  attr_accessor :score
 end
