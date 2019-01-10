@@ -5,6 +5,7 @@ class ColocMailer < ApplicationMailer
   #
   #   en.coloc_mailer.creation_confirmation.subject
   #
+
   def creation_confirmation(coloc, user)
     @coloc = coloc
     @user = user
