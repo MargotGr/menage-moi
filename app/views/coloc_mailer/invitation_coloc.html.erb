@@ -1,6 +1,6 @@
-<h1 style="text-align: center; color: #3AB795; font-family: Arial ;">Ton colocataire <%= @user.pseudo %> t'invite sur Ménage-moi</h1>
+<h1 style="text-align: center; color: #3AB795; font-family: Arial ;">Ton/Ta colocataire <%= @user.pseudo %> t'invite sur Ménage-moi</h1>
 
 <p style="font-family: Arial">
   Ton/ta colocataire <%= @user.pseudo %> a créé la coloc: <strong><%= @coloc.name %></strong>  sur l'appliacation <%= link_to "Ménage-moi", root_url %>.
 </p>
-<p style="font-family: Arial">Il ne reste plus qu'à le/la rejoindre en précisant le nom de la colocation: <br><strong><%= @coloc.name %></strong></p>
+<p style="font-family: Arial">Il ne reste plus qu'à le/la rejoindre en précisant le nom de la colocation: <strong style="font-size: 24px;">"<%= @coloc.name %>"</strong></p>

@@ -62,11 +62,11 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_mailer.delivery_method = :letter_opener
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Pour tester avec l'envoie d'un vrai email :
-  # config.action_mailer.delivery_method     = :postmark
-  # config.action_mailer.postmark_settings   = { api_token: ENV['POSTMARK_API_KEY'] }
+  config.action_mailer.delivery_method     = :postmark
+  config.action_mailer.postmark_settings   = { :api_token => "f8b61d54-be89-4af5-89a5-ecc508330a9e" }
 
 end
