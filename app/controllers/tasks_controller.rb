@@ -117,10 +117,14 @@ class TasksController < ApplicationController
   ]
 
   def select_tasks
-    # Création des données nécessaires pour afficher les tâches à sélectionner en checkboxes
-    tasks = INITIAL_TASKS
-    @default_tasks = tasks.map do |task|
-      [task[:name], "#{task[:name]}_on"]
+    if current_user.coloc_id == 108
+      redirect_to colocs_new_path
+    else
+      # Création des données nécessaires pour afficher les tâches à sélectionner en checkboxes
+      tasks = INITIAL_TASKS
+      @default_tasks = tasks.map do |task|
+        [task[:name], "#{task[:name]}_on"]
+      end
     end
   end
 

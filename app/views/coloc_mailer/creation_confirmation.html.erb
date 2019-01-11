@@ -1,0 +1,11 @@
+<h1 style="text-align: center; color: #3AB795; font-family: Arial ;">Félicitation: <strong><%= @coloc.name %></strong>  est né(e)</h1>
+
+<p style="font-family: Arial">
+  Bravo <strong><%= @user.pseudo %></strong> , tu viens de créer la colocation <%= @coloc.name %>. <br>Tes colocs vont maintenant pouvoir te rejoindre, un mail leur a été envoyé.
+</p>
+<p style="font-family: Arial"></p>
+<p style="font-family: Arial">En attendant, tu peux créer <strong>le planning personnalisé</strong>  de la coloc : <%= link_to "Sélectionner les tâches partagées", tasks_select_url %></p>
+<p></p>
+<p></p>
+
+<p style="text-align: center">A très vite sur <%= link_to "Ménage-moi", root_url %></p>

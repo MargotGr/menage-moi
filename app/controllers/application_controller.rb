@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  protected
+
   def configure_permitted_parameters
     # For additional fields in app/views/devise/registrations/new.html.erb
     devise_parameter_sanitizer.permit(:sign_up, keys: [:pseudo])
@@ -14,6 +16,6 @@ class ApplicationController < ActionController::Base
   private
 
   def user_access
-    params.require(:users).permit(:email, :pseudo, :password, :created_at, :updater_at, :photo)
+    params.require(:users).permit(:email, :pseudo, :password, :created_at, :updated_at, :photo)
   end
 end
