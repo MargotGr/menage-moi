@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2018_12_26_090417) do
     t.string "pseudo"
     t.string "photo"
     t.bigint "coloc_id"
-    t.integer "score"
+    t.integer "score", default: 0
     t.index ["coloc_id"], name: "index_users_on_coloc_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
