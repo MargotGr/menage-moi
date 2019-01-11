@@ -5,6 +5,16 @@ class ColocMailer < ApplicationMailer
   #
   #   en.coloc_mailer.creation_confirmation.subject
   #
+  def message_test(coloc, user)
+    @coloc = coloc
+    @user = user
+    mail(
+      :subject => 'Hello from Postmark',
+      :to  => 'contact@menage-moi.fr',
+      :from => 'contact@menage-moi.fr',
+      :html_body => '<strong>Hello</strong> dear Postmark user.',
+      :track_opens => 'true')
+  end
 
   def creation_confirmation(coloc, user)
     @coloc = coloc
